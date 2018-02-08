@@ -23,7 +23,7 @@ func iterative_bs<T:Comparable>(list:[T], element:T)->Int?{
     while lower < upper {
         let mid = (lower + upper ) / 2
         if list[mid] > element {
-            upper = mid 
+            upper = mid
         }else if list[mid] < element {
             lower = mid + 1
         }else{
